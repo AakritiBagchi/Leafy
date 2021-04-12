@@ -6,5 +6,7 @@ export default function App() {
       <h1>Hello CodeSandbox Jazbel</h1>
       <h2>Start editing to see some magic happen!</h2>
     </div>
+
+    // practice commit
   );
 }
