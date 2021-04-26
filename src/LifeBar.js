@@ -1,7 +1,8 @@
-function LifeBar(){
+function LifeBar(props) {
   return (
     <div className="LifeBar">
       <h1>Lifebar page</h1>
+      <div>Life Bar: {props.PropsLifeData}</div>
     </div>
     // practice commit
   );
