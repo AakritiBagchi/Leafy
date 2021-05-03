@@ -7,8 +7,8 @@ function WateringCan(props) {
   return (
     <div className="WateringCan">
       <h1>WateringCan page</h1>
-      <LifeBar PropsLifeData={props.propsLifeData}/>
-      <Plant />
+      <LifeBar lifeBar={props.propsLifeData} />
+      <Plant plantAge={props.currentPlantAge} />
       <Propagate />
     </div>
   );
