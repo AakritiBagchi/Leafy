@@ -1,3 +1,4 @@
+import "./Plant.css";
 function Plant(props) {
   return (
     <div className="Plant">
