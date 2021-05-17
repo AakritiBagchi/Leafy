@@ -26,10 +26,12 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Leafy</h1>
-      <WateringCan propsLifeData={bar} currentPlantAge={currentPlantAge} />
-      <button onClick={() => grow()}>watering</button>
-      {showPropagate && <button onClick={() => reset()}>propagate</button>}
+      <div className= "LeafyTitle">
+        <h1>Leafy</h1>
+      </div>
+        <WateringCan propsLifeData={bar} currentPlantAge={currentPlantAge} />
+        <button onClick={() => grow()}>watering</button>
+        {showPropagate && <button onClick={() => reset()}>propagate</button>}
     </div>
     // practice commit
   );

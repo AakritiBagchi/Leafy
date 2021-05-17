@@ -2,3 +2,15 @@
   font-family: sans-serif;
   text-align: center;
 }
+.LeafyTitle{
+  background-color: #be9886;
+  color: white;
+}
+body {
+  background-color: #b48068;
+}
+.WateringCanCss{
+  background-color: #be9886;
+  color: white;
+  word-wrap: break-word;
+}
