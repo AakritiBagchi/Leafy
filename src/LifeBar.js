@@ -10,6 +10,7 @@ function LifeBar(props) {
         width="250"
         height="100"
       />
+      250
       <div>Life Bar: {props.lifeBar}</div>
     </div>
     // practice commit
