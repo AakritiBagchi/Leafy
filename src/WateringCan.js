@@ -8,7 +8,7 @@ function WateringCan(props) {
   return (
     <div className="WateringCan">
       <div className="WateringCanCss">
-        <h1>WateringCan page</h1>
+        <h1>Watering Can page</h1>
         <img src={WateringCanImg} alt="Watering Can" width="100" height="100" />
       </div>
 

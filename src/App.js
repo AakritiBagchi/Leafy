@@ -1,5 +1,7 @@
 import "./styles.css";
 import WateringCan from "./WateringCan";
+import WateringCanImg from "./images/WateringCan.png";
+import SeedImg from "./images/Seed.png";
 import { useState } from "react";
 
 export default function App() {
@@ -26,12 +28,26 @@ export default function App() {
 
   return (
     <div className="App">
-      <div className= "LeafyTitle">
+      <div className="LeafyTitle">
         <h1>Leafy</h1>
       </div>
-        <WateringCan propsLifeData={bar} currentPlantAge={currentPlantAge} />
-        <button onClick={() => grow()}>watering</button>
-        {showPropagate && <button onClick={() => reset()}>propagate</button>}
+      <WateringCan propsLifeData={bar} currentPlantAge={currentPlantAge} />
+      <img
+        src={WateringCanImg}
+        onClick={() => grow()}
+        alt="pixelated watering can"
+        width="100"
+        height="100"
+      />
+      {showPropagate && (
+        <img
+          src={SeedImg}
+          onClick={() => reset()}
+          alt="pixelated image of seed"
+          width="100"
+          height="100"
+        />
+      )}
     </div>
     // practice commit
   );
