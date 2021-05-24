@@ -3,6 +3,7 @@ import WateringCan from "./WateringCan";
 import WateringCanImg from "./images/WateringCan.png";
 import SeedImg from "./images/Seed.png";
 import { useState } from "react";
+import theSun from "./images/thesun.png";
 
 export default function App() {
   const [bar, setBar] = useState(0);
@@ -29,16 +30,24 @@ export default function App() {
   return (
     <div className="App">
       <div className="LeafyTitle">
+        <img
+          src={theSun}
+          alt="pixelated image of a sun"
+          width="200"
+          height="200"
+        />
         <h1>Leafy</h1>
       </div>
       <WateringCan propsLifeData={bar} currentPlantAge={currentPlantAge} />
-      <img
-        src={WateringCanImg}
-        onClick={() => grow()}
-        alt="pixelated watering can"
-        width="100"
-        height="100"
-      />
+      {!showPropagate && (
+        <img
+          src={WateringCanImg}
+          onClick={() => grow()}
+          alt="pixelated watering can"
+          width="100"
+          height="100"
+        />
+      )}
       {showPropagate && (
         <img
           src={SeedImg}
