@@ -14,7 +14,6 @@ function LifeBar(props) {
         width="350"
         height="200"
       />
-      
     </div>
     // practice commit
   );
